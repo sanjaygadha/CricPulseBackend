@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 // Middleware
 // app.use(cors());
 // const cors = require('cors');
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: ['http://localhost:5173','https://cric-pulse-frontend.vercel.app' ]}));
 
 app.use(express.json());
 
